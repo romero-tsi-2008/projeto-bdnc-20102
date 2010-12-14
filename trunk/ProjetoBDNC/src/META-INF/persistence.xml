@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+	<persistence-unit name="projetobdnc">
+	
+		<provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>				
+			
+		<class>model.Usuario</class>
+		<class>model.Administrador</class>
+		<class>model.Cliente</class>
+		<class>model.Telefone</class>
+		<class>model.Produto</class>
+		<class>model.Equipamento</class>
+		<class>model.Categoria</class>
+		<class>model.Pedido</class>
+		<class>model.Item</class>
+		<class>model.UF</class>
+		<class>model.Cidade</class>
+		<class>model.Endereco</class>
+		<class>model.Comentario</class>
+		<class>model.Marca</class>		
+		
+		<properties>
+<!--			<property name="toplink.ddl-generation" value="drop-and-create-tables"/>-->
+			<property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/projetobdnc"/>
+			<property name="toplink.jdbc.user" value="postgres"/>
+			<property name="toplink.jdbc.password" value="seinao" />
+			<property name="toplink.logging.level" value="fine" />
+		</properties>
+		
+	</persistence-unit>
+</persistence>

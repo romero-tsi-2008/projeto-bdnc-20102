@@ -34,7 +34,6 @@ public abstract class Usuario implements UsuarioIF {
 	private List<Telefone> telefones;
 	
 		
-	
 	public Usuario() {
 		
 	}
